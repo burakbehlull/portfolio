@@ -1,9 +1,9 @@
-import Image from "next/image";
-
+import './main.scss'
+import { Hero } from './pages/index'
 export default function Home() {
   return (
     <>
-      MERHABA PORTFOLİO!
+      <Hero />
     </>
   );
 }

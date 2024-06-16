@@ -1,0 +1,20 @@
+@import './sass/Helpers/variables';
+@import './sass/base/reset';
+
+html {
+    background-color: $bgColor;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+
+li {
+    color: $textColor;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    @import './sass/pages/hero';
+}

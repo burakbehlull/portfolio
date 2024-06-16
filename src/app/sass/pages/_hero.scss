@@ -1,0 +1,36 @@
+&#hero {
+    height: calc(100vh);
+    width: max(100%);
+    background-color: red;
+
+    // NAV
+    nav {
+        background-color: blue;
+
+        ul{
+            display: flex;
+            justify-content: space-between;
+            padding: 1.7rem;
+            li {
+
+            }
+        }
+    }
+    // ARTICLE
+    article {
+        height: 73%;
+    }
+
+    //FOOTER
+    footer {
+        background-color: blue;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.7rem;
+            li {
+
+            }
+        }
+    }
+}
