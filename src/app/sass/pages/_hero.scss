@@ -13,7 +13,22 @@
             display: flex;
             justify-content: space-between;
             padding: 1.7rem;
-            //li 
+            li {
+                &:nth-child(3){
+                    border: 1px solid $textColor;
+                    padding: 6px 13px;
+                    border-radius: 9px 13px;
+                    &:hover {
+                        background-color: rgb(24, 23, 23);
+                        cursor: pointer;
+                    }
+                }
+            
+                a {
+                    color: $textColor;
+                    
+                }
+            }
         }
     }
     // ARTICLE
@@ -43,7 +58,6 @@
             display: flex;
             justify-content: space-between;
             padding: 1.7rem;
-            // li 
         }
     }
     @media only screen and (orientation: portrait) {

@@ -4,9 +4,9 @@ const Hero : React.FC = ()=> {
         <section id='hero'>
             <nav>
                 <ul>
-                    <li>LOCAL</li>
-                    <li>CV</li>
-                    <li>NAVIGATE</li>
+                    <li><a href="#">LOCAL</a></li>
+                    <li><a href="#">CV</a></li>
+                    <li><a href="#">NAVIGATE</a></li>
                 </ul>
             </nav>
 
