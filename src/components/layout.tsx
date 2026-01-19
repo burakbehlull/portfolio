@@ -19,7 +19,6 @@ export function Navbar() {
     { name: t("home"), href: "/" },
     { name: t("projects"), href: "/projects" },
     { name: t("blog"), href: "/blog" },
-    { name: t("speaking"), href: "/speaking" },
     { name: t("about"), href: "/about" },
   ];
 
