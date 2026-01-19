@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navbar, Footer } from "@/components/layout";
 import { ThemeProvider } from "@/components/theme-provider";
+import { LanguageProvider } from "@/context/language-context";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -22,16 +23,18 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} antialiased bg-background text-foreground`}>
-        <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-        >
-            <Navbar />
-            {children}
-            <Footer />
-        </ThemeProvider>
+        <LanguageProvider>
+          <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+          >
+              <Navbar />
+              {children}
+              <Footer />
+          </ThemeProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

@@ -29,7 +29,7 @@ export function BlogCard({ post }: BlogProps) {
         <span className="text-xs font-medium text-zinc-400">
           {new Date(post.createdAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
         </span>
-        <h3 className="text-lg font-semibold tracking-tight text-zinc-900 group-hover:text-black">
+        <h3 className="text-lg font-semibold tracking-tight text-zinc-900 dark:text-white group-hover:text-black dark:group-hover:text-zinc-200 transition-colors">
           {post.title}
         </h3>
         <p className="text-sm text-zinc-500 line-clamp-2">{post.excerpt}</p>
