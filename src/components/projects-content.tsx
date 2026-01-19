@@ -23,7 +23,7 @@ export default function ProjectsContent({ projects, totalPages, currentPage }: {
             <ProjectCard key={project._id} project={project} />
           ))
         ) : (
-          <p className="text-zinc-500 dark:text-zinc-500">{t('noProjects')}</p>
+          <p className="text-zinc-500 dark:text-zinc-400">{t('noProjects')}</p>
         )}
       </div>
 

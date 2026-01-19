@@ -126,10 +126,10 @@ export function Footer() {
     <footer className="w-full max-w-4xl mx-auto py-12 px-6 mt-20 flex flex-col md:flex-row items-center justify-between text-zinc-500 text-sm">
       <p>Built with Next.js • © {new Date().getFullYear()}</p>
       <div className="flex items-center gap-6 mt-4 md:mt-0">
-        <Link href="#" className="hover:text-black transition-colors">
+        <Link href="https://github.com/burakbehlull" className="hover:text-black transition-colors">
           <Github className="w-5 h-5" />
         </Link>
-        <Link href="#" className="hover:text-black transition-colors">
+        <Link href="https://x.com/burakbehlull" className="hover:text-black transition-colors">
           <Twitter className="w-5 h-5" />
         </Link>
         <Link href="#" className="hover:text-black transition-colors">

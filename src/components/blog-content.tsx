@@ -23,7 +23,7 @@ export default function BlogContent({ blogs, totalPages, currentPage }: { blogs:
             <BlogCard key={blog._id} post={blog} />
           ))
         ) : (
-          <p className="text-zinc-500 dark:text-zinc-500">{t('noArticles')}</p>
+          <p className="text-zinc-500 dark:text-zinc-400">{t('noArticles')}</p>
         )}
       </div>
 

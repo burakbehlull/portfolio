@@ -1,13 +1,19 @@
 @import "tailwindcss";
 @plugin "tailwindcss-animate";
 
+@variant light {
+  :root:not(.dark) & {
+    @slot;
+  }
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
 .dark {
-  --background: #111111;
+  --background: #09090b;
   --foreground: #e5e5e5;
 }
 

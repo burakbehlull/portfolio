@@ -29,7 +29,7 @@ export function ProjectCard({ project }: ProjectProps) {
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         ) : (
-          <div className="h-full w-full flex items-center justify-center text-zinc-300 dark:text-zinc-700">No Image</div>
+          <div className="h-full w-full flex items-center justify-center light:text-zinc-300 dark:text-zinc-400">No Image</div>
         )}
       </Link>
       <div className="space-y-3 flex-1">
@@ -41,18 +41,18 @@ export function ProjectCard({ project }: ProjectProps) {
         </Link>
         
         <div className="flex flex-wrap items-center gap-4 text-sm font-medium pt-1">
-          <Link href={`/projects/${project._id}`} className="flex items-center gap-1 text-black dark:text-white hover:underline">
+          <Link href={`/projects/${project._id}`} className="flex items-center gap-1 light:text-black dark:text-white hover:underline">
             {t('viewProject')} <ArrowRight className="w-4 h-4 ml-0.5" />
           </Link>
           
           {project.demoLink && (
-             <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors">
+             <a href={project.demoLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 light:text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors">
                 <Globe className="w-3.5 h-3.5" /> {t('viewDemo')}
              </a>
           )}
           
           {project.repoLink && (
-             <a href={project.repoLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors">
+             <a href={project.repoLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 light:text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors">
                 <Github className="w-3.5 h-3.5" /> {t('viewSource')}
              </a>
           )}
